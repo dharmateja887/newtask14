@@ -1,0 +1,9 @@
+input[type="submit"]
+{
+    background-color: rgba(8, 42, 232, 0.821);
+    color: white; 
+    padding:10px; 
+    width: 15%; 
+    padding-left: 10px;
+    
+}

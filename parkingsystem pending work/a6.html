@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SPMS - Account Setting</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+  rel="stylesheet"/>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#efefef;
+    }
+
+    .wrapper{
+      display:flex;
+      height:100vh;
+    }
+
+    /* Sidebar */
+
+    .sidebar{
+      width:220px;
+      background:#2f3640;
+      color:#fff;
+      padding-top:15px;
+    }
+
+    .logo{
+      padding:0 15px 20px;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+      font-size:14px;
+    }
+
+    .logo i{
+      color:#0d6efd;
+      margin-right:5px;
+    }
+
+    .menu{
+      margin-top:10px;
+    }
+
+    .menu ul{
+      list-style:none;
+    }
+
+    .menu ul li{
+      padding:12px 15px;
+      font-size:12px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .menu ul li:hover,
+    .menu ul li.active{
+      background:#0d6efd;
+    }
+
+    .menu ul li i{
+      width:18px;
+    }
+
+    /* Main */
+
+    .main{
+      flex:1;
+      padding:15px;
+    }
+
+    /* Card */
+
+    .card{
+      background:#fff;
+      border:1px solid #ddd;
+      padding:14px;
+    }
+
+    .card-title{
+      font-size:12px;
+      color:#666;
+      margin-bottom:15px;
+      border-bottom:1px solid #eee;
+      padding-bottom:8px;
+    }
+
+    .card-title i{
+      margin-right:5px;
+    }
+
+    /* Form */
+
+    .form-group{
+      margin-bottom:12px;
+    }
+
+    .form-group label{
+      display:block;
+      font-size:11px;
+      color:#666;
+      margin-bottom:5px;
+    }
+
+    .form-group input{
+      width:100%;
+      height:32px;
+      border:1px solid #ccc;
+      padding:5px 10px;
+      font-size:12px;
+      outline:none;
+    }
+
+    .form-group input:focus{
+      border-color:#0d6efd;
+    }
+
+    /* Button */
+
+    .submit-btn{
+      width:100%;
+      height:34px;
+      border:none;
+      border-radius:20px;
+      background:#0d6efd;
+      color:#fff;
+      font-size:12px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .submit-btn:hover{
+      background:#0b5ed7;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- Sidebar -->
+
+  <div class="sidebar">
+
+    <div class="logo">
+      <i class="fa-solid fa-car"></i> SPMS Panel
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li><a href="a1.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+        <li><a href="a2.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-folder"></i> Category</a></li>
+        <li><a href="a3.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-car-side"></i> Vehicle Entry</a></li>
+        <li><a href="a4.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-list"></i> Manage Vehicles</a></li>
+        <li style="cursor: default;"><i class="fa-solid fa-chart-column"></i> Reports</li>
+        <li><a href="a5.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+        <li class="active"><a href="a6.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-user-gear"></i> Account Setting</a></li>
+        <li><a href="index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-power-off"></i> Logout</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Main -->
+
+  <div class="main">
+
+    <div class="card">
+
+      <div class="card-title">
+        <i class="fa-solid fa-gear"></i>
+        Change Your Password
+      </div>
+
+      <!-- Form -->
+
+      <form>
+
+        <div class="form-group">
+          <label>Current Password</label>
+          <input type="password" value="**">
+        </div>
+
+        <div class="form-group">
+          <label>New Password</label>
+          <input type="password" value="**">
+        </div>
+
+        <div class="form-group">
+          <label>Re-enter Password</label>
+          <input type="password" value="**">
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Change Password
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

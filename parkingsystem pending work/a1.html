@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SPMS Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"/>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#ececec;
+    }
+
+    .wrapper{
+      display:flex;
+      height:100vh;
+    }
+
+    /* Sidebar */
+    .sidebar{
+      width:220px;
+      background:#2f3640;
+      color:#fff;
+      padding-top:15px;
+    }
+
+    .logo{
+      padding:0 15px 20px;
+      font-size:14px;
+      border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo i{
+      color:#0d6efd;
+      margin-right:5px;
+    }
+
+    .menu{
+      margin-top:10px;
+    }
+
+    .menu ul{
+      list-style:none;
+    }
+
+    .menu ul li{
+      padding:12px 15px;
+      font-size:13px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .menu ul li i{
+      width:18px;
+    }
+
+    .menu ul li:hover,
+    .menu ul li.active{
+      background:#0d6efd;
+    }
+
+    /* Main */
+    .main{
+      flex:1;
+      display:flex;
+      flex-direction:column;
+    }
+
+    /* Topbar */
+    .topbar{
+      height:40px;
+      background:#343a40;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      padding:0 15px;
+      font-size:12px;
+    }
+
+    .topbar i{
+      color:#0d6efd;
+      margin-right:5px;
+    }
+
+    .logout-btn{
+      background:#0d6efd;
+      border:none;
+      color:#fff;
+      padding:4px 10px;
+      margin-left:10px;
+      font-size:11px;
+      border-radius:2px;
+      cursor:pointer;
+    }
+
+    /* Dashboard */
+    .dashboard{
+      padding:22px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+
+    .card{
+      height:64px;
+      color:#fff;
+      padding:14px;
+      position:relative;
+    }
+
+    .card .number{
+      font-size:18px;
+      font-weight:500;
+    }
+
+    .card .title{
+      font-size:11px;
+      margin-top:5px;
+    }
+
+    .card i{
+      position:absolute;
+      right:18px;
+      top:18px;
+      font-size:32px;
+      opacity:0.9;
+    }
+
+    .blue{
+      background:#0d6efd;
+    }
+
+    .dark{
+      background:#343a40;
+    }
+
+    .red{
+      background:#dc3545;
+    }
+
+    .yellow{
+      background:#ffc107;
+    }
+
+    .gray{
+      background:#6c757d;
+    }
+
+    .cyan{
+      background:#17a2b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+
+    <div class="logo">
+      <i class="fa-solid fa-car"></i> SPMS Panel
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li class="active"><a href="a1.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+        <li><a href="a2.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-folder"></i> Category</a></li>
+        <li><a href="a3.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-car-side"></i> Vehicle Entry</a></li>
+        <li><a href="a4.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-list"></i> Manage Vehicles</a></li>
+        <li style="cursor: default;"><i class="fa-solid fa-file-lines"></i> Reports</li>
+        <li><a href="a5.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+        <li><a href="a6.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-user"></i> Account Setting</a></li>
+        <li><a href="index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center;"><i class="fa-solid fa-power-off"></i> Logout</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <span><i class="fa-solid fa-circle-user"></i> Welcome, Administrator</span>
+      <button class="logout-btn">
+        <i class="fa-solid fa-right-from-bracket"></i> Logout
+      </button>
+    </div>
+
+    <!-- Dashboard Cards -->
+    <div class="dashboard">
+
+      <div class="cards">
+
+        <div class="card cyan">
+          <div class="number">1</div>
+          <div class="title">Vehicles Parked</div>
+          <i class="fa-solid fa-square-parking"></i>
+        </div>
+
+        <div class="card dark">
+          <div class="number">2</div>
+          <div class="title">Departed Vehicles</div>
+          <i class="fa-solid fa-car"></i>
+        </div>
+
+        <div class="card red">
+          <div class="number">6</div>
+          <div class="title">Available Category</div>
+          <i class="fa-solid fa-box"></i>
+        </div>
+
+        <div class="card yellow">
+          <div class="number">$ 18.00</div>
+          <div class="title">Total Earnings</div>
+          <i class="fa-solid fa-money-check-dollar"></i>
+        </div>
+
+        <div class="card gray">
+          <div class="number">3</div>
+          <div class="title">Total Records</div>
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+
+        <div class="card blue">
+          <div class="number">74</div>
+          <div class="title">Total Parking Slots</div>
+          <i class="fa-solid fa-check-double"></i>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
